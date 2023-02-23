@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xwxo2nf1fqjst7E5OGrhNrrH2M+DVfHZ3SO5aBE9DhgFR/RDCeh2QoMak5QR8T7Yh5TqHEVLIKDvtYbSjeO0Kg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\LoginAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ayush\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ayush\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ayush\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ayush\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ayush\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ayush\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
