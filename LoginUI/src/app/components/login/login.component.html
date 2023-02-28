@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
 </head>
+
 <body>
-    <!-- Section: Design Block -->
-<section class="">
+  <!-- Section: Design Block -->
+  <section class="">
     <!-- Jumbotron -->
     <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
       <div class="container">
@@ -26,65 +28,69 @@
               veritatis? Dicta facilis sint aliquid ipsum atque?
             </p>
           </div>
-  
+
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
-                <form>
-                  
-  
+                <form [formGroup]="loginForm">
+
+
                   <!-- Email input -->
-                  <div class="form-outline mb-4">
-                      <label class="form-label" for="email">Email address</label>
-                    <input type="email" id="email" class="form-control" />
+                  <div class="form-outline mb-4" >
+                    <label class="form-label" for="email">Email address</label>
+                    <input  formControlName="email" type="email" id="email" class="form-control" />
+                    <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')"
+                      class="text-danger">*Email is required</small>
                   </div>
-  
-                  <!-- Password input -->
-                  <div class="form-outline mb-4">
-                      <label class="form-label" for="pass">Password</label>
-                    <input type="password" id="pass" class="form-control" />
                     
-                  </div>
-                  <div class="row mb-4">
-                  <!-- Checkbox -->
-                  <div class="col d-flex justify-content-center">
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="pass">Password</label>
+                      <input formControlName="password" type="password" id="pass" class="form-control" />
+                      <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')"
+                        class="text-danger">*Password is required</small>
+                    </div>
+                    <div class="row mb-4">
+                      <!-- Checkbox -->
+                    <div class="col d-flex justify-content-center">
                       <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
                       <label class="form-check-label" for="form2Example33">
                         Remember Me
                       </label>
-                  </div>
-                  <div class="col">
-                    <!-- Simple link -->
-                    <a href="#!">Forgot password?</a>
-                  </div>
+                    </div>
+                    <div class="col">
+                      <!-- Simple link -->
+                      <a href="#!">Forgot password?</a>
+                    </div>
                   </div>
 
                   <!-- Submit button -->
-                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                  <button (click)="onSubmit()" type="submit" class="btn btn-primary btn-block mb-4">
                     Login
                   </button>
-  
+
                   <!-- Register buttons -->
                   <div class="text-center">
                     <p>or sign up with:</p>
 
                     <button href="https://www.facebook.com" type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fa fa-facebook" ></i>
+                      <i class="fa fa-facebook"></i>
                     </button>
-  
+
                     <button type="button" class="btn btn-link btn-floating mx-1">
                       <i class="fa fa-google"></i>
                     </button>
-  
+
                     <button type="button" class="btn btn-link btn-floating mx-1">
                       <i class="fa fa-twitter"></i>
                     </button>
-  
+
                     <button type="button" class="btn btn-link btn-floating mx-1">
                       <i class="fa fa-github"></i>
                     </button>
                   </div>
-                  <div class="text-center pt-4 text-muted">Don't have an account? <a id="forget" routerLink="/signup">Signup</a></div>
+                  <div class="text-center pt-4 text-muted">Don't have an account? <a id="forget"
+                      routerLink="/signup">Signup</a></div>
                 </form>
               </div>
             </div>
@@ -96,5 +102,5 @@
   </section>
   <!-- Section: Design Block -->
 </body>
-</html>
 
+</html>

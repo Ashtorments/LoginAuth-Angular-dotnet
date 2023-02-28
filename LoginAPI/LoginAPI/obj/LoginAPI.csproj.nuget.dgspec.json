@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\LoginAPI.csproj": {}
+    "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\New folder (2)\\LoginAPI\\LoginAPI\\LoginAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\LoginAPI.csproj": {
+    "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\New folder (2)\\LoginAPI\\LoginAPI\\LoginAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\LoginAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\New folder (2)\\LoginAPI\\LoginAPI\\LoginAPI.csproj",
         "projectName": "LoginAPI",
-        "projectPath": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\LoginAPI.csproj",
+        "projectPath": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\New folder (2)\\LoginAPI\\LoginAPI\\LoginAPI.csproj",
         "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\Login-Page\\LoginAPI\\LoginAPI\\obj\\",
+        "outputPath": "C:\\Users\\ayush\\Desktop\\New folder (3)\\New folder\\New folder (2)\\LoginAPI\\LoginAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
