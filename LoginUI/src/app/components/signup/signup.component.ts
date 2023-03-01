@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import validateforms from 'src/app/helpers/validateforms';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-signup',
@@ -9,7 +10,7 @@ import validateforms from 'src/app/helpers/validateforms';
 })
 export class SignupComponent implements OnInit {
   signupForm!: FormGroup;
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private auth: AuthenticationService ) { }
 
   ngOnInit(): void {
     this.signupForm= this.fb.group({
@@ -26,22 +27,22 @@ export class SignupComponent implements OnInit {
 
       console.log(this.signupForm.value)
       //send the obj to DB
+      this.auth.signUp(this.signupForm.value)
+      .subscribe({
+        next:(res)=>{
+          alert(res.message)
+        },
+        error:(err)=>{
+          alert(err?.error.message)
+        }
+      })
     }
     else{
       console.log("form is not valid")
-      this.validateAllFormFields(this.signupForm);
+      validateforms.validateAllFormFields(this.signupForm);
       alert("Invalid")
       //throw error with required fields
     }
   }
-  private validateAllFormFields(formGroup:FormGroup){
-    Object.keys(formGroup.controls).forEach(field=>{
-      const control = formGroup.get(field);
-      if(control instanceof FormControl){
-        control.markAsDirty({onlySelf:true});
-      } else if (control instanceof FormGroup){
-        validateforms.validateAllFormFields(control)
-      }
-    })
-  }
+  
 }
